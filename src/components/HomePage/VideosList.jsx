@@ -12,7 +12,7 @@ const VideosList = ({ searchResults }) => {
   const content = results?.length ? (
     results
   ) : (
-    <p style={{ color: "white" }}>No results</p>
+    <p style={{ color: "white" }}>No results Found</p>
   );
   return <Container>{content}</Container>;
 };
