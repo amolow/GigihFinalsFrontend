@@ -15,7 +15,7 @@ export default function ChatBox() {
     event.preventDefault();
 
     try {
-      await axios.post("http://localhost:4000/comments", {
+      await axios.post("https://gigihfinalsfrontend.onrender.com/comments", {
         username,
         comment,
         videoId,

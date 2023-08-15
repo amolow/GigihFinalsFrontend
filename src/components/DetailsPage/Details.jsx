@@ -15,7 +15,7 @@ export default function Details() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/videos/${videoId}`)
+      .get(`https://gigihfinalsfrontend.onrender.com/videos/${videoId}`)
       .then((response) => {
         setVideo(response.data);
       })
@@ -24,7 +24,7 @@ export default function Details() {
       });
 
     axios
-      .get(`http://localhost:4000/products/${videoId}`)
+      .get(`https://gigihfinalsfrontend.onrender.com/products/${videoId}`)
       .then((response) => {
         setProducts(response.data);
       })

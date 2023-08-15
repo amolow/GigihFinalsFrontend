@@ -9,7 +9,7 @@ export default function ChatDisplay() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/comments/${videoId}`)
+      .get(`https://gigihfinalsfrontend.onrender.com/comments/${videoId}`)
       .then((response) => {
         const sortedChatData = response.data.sort((a, b) =>
           a.timestamp < b.timestamp ? 1 : -1
