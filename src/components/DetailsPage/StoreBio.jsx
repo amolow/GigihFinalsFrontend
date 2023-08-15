@@ -11,7 +11,7 @@ export default function StoreBio() {
 
   useEffect(() => {
     axios
-      .get(`https://gigihfinalsfrontend.onrender.com/videos/${videoId}`)
+      .get(`https://gigihfinalsbackend.onrender.com/videos/${videoId}`)
       .then((response) => {
         setVideo(response.data);
       })

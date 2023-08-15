@@ -10,7 +10,7 @@ export default function VideoPlayer() {
 
   useEffect(() => {
     axios
-      .get(`https://gigihfinalsfrontend.onrender.com/${videoId}`)
+      .get(`https://gigihfinalsbackend.onrender.com/${videoId}`)
       .then((response) => {
         setVideo(response.data);
       })

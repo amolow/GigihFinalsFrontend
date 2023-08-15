@@ -9,7 +9,7 @@ export default function ProductList() {
 
   useEffect(() => {
     axios
-      .get(`https://gigihfinalsfrontend.onrender.com/products/${videoId}`)
+      .get(`https://gigihfinalsbackend.onrender.com/products/${videoId}`)
       .then((response) => {
         setProducts(response.data);
       })

@@ -26,7 +26,7 @@ const Container = styled.div`
 
 export const getVideos = async () => {
   const response = await axios.get(
-    "https://gigihfinalsfrontend.onrender.com/videos"
+    "https://gigihfinalsbackend.onrender.com/videos"
   );
   return response.data;
 };
